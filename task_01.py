@@ -19,5 +19,5 @@ def get_matches(players):
     for index1, first_player in enumerate(PLAYERS):
         for index2, second_player in enumerate(PLAYERS):
             if index1 < index2:
-                print [first_player, second_player]        
+                print [first_player, second_player]    
     return players
