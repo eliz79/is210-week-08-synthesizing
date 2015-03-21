@@ -23,5 +23,5 @@ def get_matches(players):
     for first_player in newlist_of_players:
         for second_player in newlist_of_players:
             if first_player[0] < second_player[0]:
-                player_matchup.append((first_player[1]), (second_player[1]))
+                player_matchup.append([(first_player[1]), (second_player[1])])
     return player_matchup
