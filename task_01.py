@@ -2,8 +2,6 @@
 # *-* coding: utf-8 *-*
 """A list of versus matchups for players."""
 
-PLAYERS = ['Harry', 'Howard', 'Hugh']
-
 
 def get_matches(players):
     """This is a docstring.
@@ -12,17 +10,14 @@ def get_matches(players):
                        between players stored as tuples.
     Return:
         A new generated list of tuples.
-
     Example:
         >>> import task_01
         >>> task_01.get_matches(['Harry', 'Howard', 'Hugh'])
         [('Harry', 'Howard'), ('Harry', 'Hugh'), ('Howard', 'Hugh')]
     """
+    PLAYERS = ['Harry', 'Howard', 'Hugh']
     for index1, first_player in enumerate(PLAYERS):
         for index2, second_player in enumerate(PLAYERS):
-            #print [first_player, second_player]
             if index1 < index2:
-                print [first_player, second_player]
-                #print [index1, index2, first_player, second_player]
-
+                print [first_player, second_player]        
     return players
