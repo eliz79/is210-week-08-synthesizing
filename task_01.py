@@ -15,9 +15,15 @@ def get_matches(players):
         >>> task_01.get_matches(['Harry', 'Howard', 'Hugh'])
         [('Harry', 'Howard'), ('Harry', 'Hugh'), ('Howard', 'Hugh')]
     """
-    PLAYERS = ['Harry', 'Howard', 'Hugh']
-    for index1, first_player in enumerate(PLAYERS):
-        for index2, second_player in enumerate(PLAYERS):
+    player = []
+    
+    for index1, first_player in enumerate(players):
+        for index2, second_player in enumerate(players):
             if index1 < index2:
-                print [first_player, second_player]
-    return players
+                new = first_player, second_player
+                player.append(players)
+                print new
+                #return player, new
+        
+                
+            
